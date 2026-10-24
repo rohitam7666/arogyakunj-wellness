@@ -1,0 +1,12 @@
+{
+  "appId": "com.arogyakunj.wellness",
+  "appName": "Arogyakunj Wellness",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

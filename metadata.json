@@ -1,0 +1,6 @@
+{
+  "name": "Arogyakunj Wellness",
+  "description": "World Class AI Wellness Companion powered by Gemini for nutrition, herbal wisdom, fitness, and holistic health.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

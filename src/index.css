@@ -1,0 +1,154 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Health & Wellness Chat Typography */
+.font-health {
+  font-family: 'Quicksand', 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.font-heading-health {
+  font-family: 'Fraunces', 'Outfit', serif;
+}
+
+/* Custom herbal green chat prose styles */
+.wellness-chat-prose {
+  color: #025a3a;
+  font-family: 'Quicksand', 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+.wellness-chat-prose p {
+  color: #025a3a;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.wellness-chat-prose strong,
+.wellness-chat-prose b {
+  color: #007d52;
+  font-weight: 700;
+}
+
+.wellness-chat-prose h1,
+.wellness-chat-prose h2,
+.wellness-chat-prose h3,
+.wellness-chat-prose h4 {
+  color: #01442b;
+  font-weight: 700;
+  margin-top: 0.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.wellness-chat-prose ul,
+.wellness-chat-prose ol {
+  color: #025a3a;
+  padding-left: 1.25rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.wellness-chat-prose li {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.wellness-chat-prose li::marker {
+  color: #00b074;
+}
+
+.wellness-chat-prose a {
+  color: #00b074;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.wellness-chat-prose blockquote {
+  border-left-color: #00b074;
+  color: #025a3a;
+  font-style: italic;
+}
+
+/* Active & Calming Organic Voice Companion Aura Animations (Serene, Slow, Meditative Breathing) */
+@keyframes active-aura-wave {
+  0% {
+    transform: scale(0.98);
+    opacity: 0.45;
+  }
+  45% {
+    opacity: 0.22;
+  }
+  100% {
+    transform: scale(1.24);
+    opacity: 0;
+  }
+}
+
+@keyframes active-aura-wave-speaking {
+  0% {
+    transform: scale(0.98);
+    opacity: 0.58;
+  }
+  45% {
+    opacity: 0.28;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+/* Ambient soft halo glow behind avatar (Calm, slow, gentle respiration pulse) */
+@keyframes active-aura-glow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.99);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.06);
+  }
+}
+
+.animate-active-aura {
+  border-radius: 9999px;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  animation: active-aura-wave 4.4s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+.animate-active-aura-delayed {
+  border-radius: 9999px;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  animation: active-aura-wave 4.4s cubic-bezier(0.25, 0.1, 0.25, 1) 2.2s infinite;
+}
+
+.animate-active-aura-speaking {
+  border-radius: 9999px;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  animation: active-aura-wave-speaking 3.4s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+.animate-active-aura-speaking-delayed {
+  border-radius: 9999px;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  animation: active-aura-wave-speaking 3.4s cubic-bezier(0.25, 0.1, 0.25, 1) 1.7s infinite;
+}
+
+.animate-active-glow {
+  border-radius: 9999px;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  animation: active-aura-glow 4.8s ease-in-out infinite;
+}
+
