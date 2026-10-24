@@ -1,7 +1,7 @@
 import { Capacitor } from '@capacitor/core';
 
-// Cloud Run server endpoint hosting the Gemini Multimodal Live proxy & API
-export const CLOUD_BACKEND_HOST = 'ais-dev-a24molrxvkh5sht2azath3-2793730913.asia-southeast1.run.app';
+// Render server endpoint hosting the Gemini Multimodal Live proxy & API
+export const CLOUD_BACKEND_HOST = 'arogyakunj-wellness.onrender.com';
 
 /**
  * Checks if the app is running inside a Native Android/iOS APK container
