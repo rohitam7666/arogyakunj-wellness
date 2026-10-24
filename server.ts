@@ -87,7 +87,7 @@ async function startServer() {
       const latestMessage = messages[messages.length - 1]?.content || '';
 
       const chat = ai.chats.create({
-        model: 'gemini-2.0-flash',
+        model: 'gemini-3.8-flash',
         history: formattedHistory,
         config: {
           systemInstruction: `You are the Arogyakunj Wellness assistant, representing a Herbalife Independent Distributor and Nutrition Club owner in India. 
@@ -288,7 +288,7 @@ async function startServer() {
 
     try {
       session = await ai.live.connect({
-        model: 'gemini-2.0-flash-exp',
+        model: 'gemini-3.8-flash-exp',
         config: {
           responseModalities: [Modality.AUDIO],
           speechConfig: {

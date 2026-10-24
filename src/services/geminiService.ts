@@ -95,7 +95,7 @@ export async function generateWellnessResponse(
   if (ai) {
     try {
       const chat = ai.chats.create({
-        model: 'gemini-2.0-flash',
+        model: 'gemini-3.8-flash',
         history: history.map(m => ({
           role: m.role === 'user' ? 'user' : 'model',
           parts: [{ text: m.content }]
