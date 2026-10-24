@@ -56,10 +56,10 @@ export async function generateWellnessResponse(
     return offline.content;
   }
 
-  // 1. Try server endpoint with ultra-fast 1.0s network timeout
+  // 1. Try Render cloud server endpoint with 8s network timeout
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 1000);
+    const timeoutId = setTimeout(() => controller.abort(), 8000);
 
     const apiEndpoint = `${getApiBaseUrl()}/api/chat`;
     const response = await fetch(apiEndpoint, {
